@@ -1,1 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.logo img {
+  max-width: 250px;
+  padding: 40px;
+}
+
+.nav-header ul {
+  display: flex;
+  list-style: none;
+}
+.nav-header ul a {
+  text-decoration: none;
+  margin: 16px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+}

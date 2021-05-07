@@ -3,3 +3,18 @@
  padding: 0;
  box-sizing: border-box;
 }
+
+body {
+font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+ @include containerSt;
+   &.container-header {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     font-weight: $semiboldWeight;
+   }
+}
