@@ -20,6 +20,21 @@ body {
   font-weight: 600;
 }
 
+.container-boxes {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-boxes .box {
+  width: calc((100% / 3) - 40px);
+  margin: 20px;
+}
+.container-boxes .box img {
+  display: block;
+  width: 100%;
+}
+
 .logo img {
   max-width: 250px;
   padding: 40px;

@@ -18,3 +18,17 @@ font-family: 'Open Sans', sans-serif;
      font-weight: $semiboldWeight;
    }
 }
+
+.container-boxes {
+ @include containerSt;
+  display: flex;
+  flex-wrap: wrap;
+   .box {
+    width: calc((100% / 3) - 40px);
+    margin: 20px;
+      img {
+        display: block;
+        width: 100%;
+      }
+   }
+}
