@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    //Dati
     $data = [
         [
             "src" => "https://www.lamolisana.it/wp-content/uploads/2017/06/4-spaghetto-quadrato-bucato-m.jpg",
@@ -137,10 +138,11 @@ Route::get('/', function () {
         ]
     ]; 
     
+    //Array Tipi di Paste
     $lunghe = [];
     $corte = [];
     $cortissime = [];
-
+    //Ciclo i Data e riempio gli Array vuoti
     foreach($data as $pasta) {
       if ($pasta['tipo'] == 'lunga') {
           $lunghe[] = $pasta;
@@ -153,7 +155,7 @@ Route::get('/', function () {
       }
 
     }
-
+    
     return view('home' , [
         'corte' => $corte,
         'lunghe' => $lunghe,

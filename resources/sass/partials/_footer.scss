@@ -1,5 +1,5 @@
 .list-column {
-flex-basis: 33%;
+width: 300px;
   ul {
     display: flex;
     flex-direction: column;
@@ -18,9 +18,9 @@ flex-basis: 33%;
 }
 
 .list-info {
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-column-gap: 100px;
+    @include containerSt;
+    display: flex;
+    justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 120px;
 

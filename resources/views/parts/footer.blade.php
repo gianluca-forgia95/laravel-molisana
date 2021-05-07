@@ -1,11 +1,14 @@
 <footer>
-  <div class="container">
-    <div class="list-info">
+    
+  <div class="container list-info">
       {{-- Column 1--}}
         <div class="list-column">
+        {{-- Logo --}}
             <div class="logo">
                 <img src="{{ asset('images/marchio-sito-test.png')}}" alt="Logo">
             </div>
+        {{-- /Logo --}}
+        {{-- List Contacts --}}
             <ul>
               <li>Ragione Sociale: La Molisana SPA</li>
               <li>Sede Legale: Contrada Colle delle Api, 100/A - 86100 - Campobasso (CB)</li>
@@ -18,6 +21,7 @@
               <li>numero verde: 800 987 543</li>
               <li>telefono: 700 111 222</li>
             </ul>
+        {{-- /List Contacts --}}
         </div>
      {{-- /Column 1--}}
       {{-- Column 2--}}
@@ -35,6 +39,7 @@
               <li>Le Persone</li>
             </ul>
         {{-- /Pastificio --}}
+        {{-- Prodotti --}}
         <h3>Prodotti</h3>
          <ul>
            <li>Le Classiche</li>
@@ -45,11 +50,12 @@
            <li>Le Semole</li>
            <li>Le Extra-Lusso</li>
          </ul>
-
+        {{-- /Prodotti --}}
         </div>
      {{-- /Column 2--}}
      {{-- Column 3--}}
      <div class="list-column">
+     {{-- Collezione --}}
        <h3>Collezione da Chef</h3>
        <ul>
          <li>Collezione da Chef</li>
@@ -57,9 +63,9 @@
          <li>Biologiche</li>
          <li>Quadrate</li>
        </ul>
+    {{-- /Collezione --}}
      </div>
      {{-- /Column 3--}}
-    </div>
   </div>
 
 </footer>

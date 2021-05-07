@@ -5,6 +5,7 @@
 {{-- Header Incluso --}}
  @include('parts.header')
 {{-- /Header Incluso --}}
+{{-- Main --}}
     <main class="bg-main">
       <div class="container">
        {{-- Paste Lunghe --}}
@@ -45,11 +46,10 @@
             </div>
           </section>
          {{-- /Paste Cortissime --}}
-
       </div>
 
     </main>
-
+{{--/Main --}}
 {{-- Footer Incluso --}}
 @include('parts/footer')
 {{-- /Footer Incluso --}}

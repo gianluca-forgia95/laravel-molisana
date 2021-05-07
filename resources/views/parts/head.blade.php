@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
     {{-- /Google Font --}}
+    {{-- File CSS --}}
     <link rel="stylesheet" href="{{ asset( 'css/app.css' )}}">
+    {{-- /File CSS --}}
     <title>La Molisana</title>
 </head>

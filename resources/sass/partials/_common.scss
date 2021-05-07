@@ -32,16 +32,18 @@ font-family: 'Open Sans', sans-serif;
       }
    }
 }
-
+main {
+ padding: 40px 0;
+}
 .bg-main {
  background-image: url('/images/fondo-pag-speciali.jpg');
- background-size: cover;
- background-repeat: no-repeat;
+ background-size: contain;
  height: auto;
   h2 {
     text-transform: uppercase;
     font-weight: $semiboldWeight;
     margin-left: 30px;
+    margin-top: 20px;
     color: $primary-blue;
   }
 }
