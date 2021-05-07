@@ -35,6 +35,19 @@ body {
   width: 100%;
 }
 
+.bg-main {
+  background-image: url("/images/fondo-pag-speciali.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+}
+.bg-main h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 30px;
+  color: #002d73;
+}
+
 .logo img {
   max-width: 250px;
   padding: 40px;

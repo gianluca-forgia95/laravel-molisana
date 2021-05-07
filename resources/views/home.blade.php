@@ -5,7 +5,7 @@
 {{-- Header Incluso --}}
  @include('parts.header')
 {{-- /Header Incluso --}}
-    <main>
+    <main class="bg-main">
       <div class="container">
        {{-- Paste Lunghe --}}
         <section>
