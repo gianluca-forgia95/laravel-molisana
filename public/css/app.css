@@ -65,3 +65,22 @@ body {
   color: #000;
   font-weight: 600;
 }
+
+.list-column {
+  flex-basis: 33%;
+}
+.list-column ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.list-column ul li {
+  font-size: 14px;
+  color: #848d9b;
+}
+
+.list-info {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
