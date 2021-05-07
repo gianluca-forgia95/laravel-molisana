@@ -68,6 +68,8 @@ body {
 
 .list-column {
   flex-basis: 33%;
+  align-self: center;
+  padding: 90px;
 }
 .list-column ul {
   display: flex;
@@ -78,9 +80,20 @@ body {
   font-size: 14px;
   color: #848d9b;
 }
+.list-column h3 {
+  text-transform: uppercase;
+  padding: 20px 0;
+  font-weight: 600;
+  color: #848d9b;
+}
 
 .list-info {
   display: flex;
-  align-items: center;
-  align-content: center;
+  justify-content: space-between;
+}
+
+footer {
+  background-image: url("/images/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }

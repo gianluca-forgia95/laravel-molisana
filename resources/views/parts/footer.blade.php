@@ -49,8 +49,17 @@
         </div>
      {{-- /Column 2--}}
      {{-- Column 3--}}
+     <div class="list-column">
+       <h3>Collezione da Chef</h3>
+       <ul>
+         <li>Collezione da Chef</li>
+         <li>Grandi Cucine</li>
+         <li>Biologiche</li>
+         <li>Quadrate</li>
+       </ul>
+     </div>
      {{-- /Column 3--}}
-      </div>
+    </div>
   </div>
 
 </footer>

@@ -1,5 +1,7 @@
 .list-column {
 flex-basis: 33%;
+align-self: center;
+padding: 90px;
   ul {
     display: flex;
     flex-direction: column;
@@ -9,10 +11,22 @@ flex-basis: 33%;
          color: $text-color;
       }
   }
+  h3 {
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-weight: $semiboldWeight;
+    color: $text-color;
+  }
 }
 
 .list-info {
  display: flex;
- align-items: center;
- align-content: center;
+ justify-content: space-between;
+}
+
+
+footer {
+    background-image: url('/images/footer-montagne-bottom.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom ;
 }
