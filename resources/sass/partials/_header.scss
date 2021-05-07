@@ -16,6 +16,10 @@
       text-transform: uppercase;
       color: #000;
       font-weight: 600;
+      line-height: 50px;
     }
+ }
+ .active {
+    background-color: $lighter-blue;
  }
 }

@@ -6,7 +6,7 @@
 
       <div class="nav-header">
          <ul>
-             <li><a href="#">Home</a></li>
+             <li class="active"><a href="#">Home</a></li>
              <li><a href="#">Prodotti</a></li>
              <li><a href="#">News</a></li>
          </ul>

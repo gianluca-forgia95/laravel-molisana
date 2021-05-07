@@ -64,12 +64,14 @@ body {
   text-transform: uppercase;
   color: #000;
   font-weight: 600;
+  line-height: 50px;
+}
+.nav-header .active {
+  background-color: #b2e5fc;
 }
 
 .list-column {
   flex-basis: 33%;
-  align-self: center;
-  padding: 90px;
 }
 .list-column ul {
   display: flex;
@@ -82,14 +84,17 @@ body {
 }
 .list-column h3 {
   text-transform: uppercase;
-  padding: 20px 0;
+  padding: 16px 0;
   font-weight: 600;
   color: #848d9b;
 }
 
 .list-info {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-column-gap: 100px;
+  padding-top: 50px;
+  padding-bottom: 120px;
 }
 
 footer {

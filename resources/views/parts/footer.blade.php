@@ -1,6 +1,6 @@
 <footer>
   <div class="container">
-      <div class="list-info">
+    <div class="list-info">
       {{-- Column 1--}}
         <div class="list-column">
             <div class="logo">
