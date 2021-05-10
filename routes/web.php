@@ -137,6 +137,46 @@ Route::get('/', function () {
             "descrizione" => "Altro elemento cult della famiglia de lo Spaghetto Quadrato (N.1 Spaghetto Quadrato. Una new entry che sarà molto apprezzata sia dai consumatori che dagli chef, perché il Ditale Quadrato è un formato deliziosamente piccolo ma sostanzioso.<br>A dispetto del nome che fa pensare ad una pastina è un formato di pasta assolutamente versatile, adatto a moltissime ricette di primi piatti.<br>La sua consistenza soda si sprigiona in bocca con un\'esplosione di emozioni, grazie agli spessori corposi, al colore elegantemente ambrato, alla texture delicatamente ruvida, cangiante e piacevolissima al tatto che trattiene il condimento sulla superficie.<br>Il Ditale Quadrato sembra ideale per preparazioni strutturate come la ricetta con crema di broccoletto siciliano, calamari e pomodori semi secchi profumata al limone e carbone d\'olive nere."
         ]
     ]; 
+
+    $contatti = [
+        "Ragione sociale: La Molisana S.P.A.",
+        "Sede Legale: Contrada Colle delle Api, 100/A",
+        "86100 - Campobasso (CB)",
+        "Pec: lamolisana@pec.it",
+        "Tel: +39 0874 4981",
+        "Fax: +39 0874 629584",
+        "info@lamolisana.it (per segnalazioni degli utenti)",
+        "commerciale@lamolisana.it",
+        "export@lamolisana.it",
+        "numero verde 800818081",
+        "telefono 3801292455"
+    ];
+    $pastificio = [
+        "Grano decorticato a pietra",
+        "Il Molise c'è",
+        "Filiera integrata",
+        "100 anni di pasta",
+        "Sartoria della pasta",
+        "Spaghetto Quadrato",
+        "Le Persone"
+    ];
+
+    $collezioneChef = [
+        "Collezione da Chef",
+        "Grandi Cucine",
+        "Biologiche",
+        "Quadrate"
+    ];
+
+    $infoProdotti = [
+        "Le Classiche",
+        "Le Integrali",
+        "Le Speciali",
+        "Le Biologiche",
+        "Le Gluten-Free",
+        "Le Semole",
+        "Le Extra di Lusso"
+    ];
     
     //Array Tipi di Paste
     $lunghe = [];
@@ -163,6 +203,10 @@ Route::get('/', function () {
         'corte' => $corte,
         'lunghe' => $lunghe,
         'cortissime' => $cortissime,
+        'contatti' => $contatti,
+        'collezione' => $collezioneChef,
+        'pastificio' => $pastificio,
+        'productsInfo' => $infoProdotti
     ]);
 })->name('homepage');
 
@@ -296,17 +340,64 @@ Route::get('/prodotti/{id}', function($id) {
             "descrizione" => "Altro elemento cult della famiglia de lo Spaghetto Quadrato (N.1 Spaghetto Quadrato. Una new entry che sarà molto apprezzata sia dai consumatori che dagli chef, perché il Ditale Quadrato è un formato deliziosamente piccolo ma sostanzioso.<br>A dispetto del nome che fa pensare ad una pastina è un formato di pasta assolutamente versatile, adatto a moltissime ricette di primi piatti.<br>La sua consistenza soda si sprigiona in bocca con un\'esplosione di emozioni, grazie agli spessori corposi, al colore elegantemente ambrato, alla texture delicatamente ruvida, cangiante e piacevolissima al tatto che trattiene il condimento sulla superficie.<br>Il Ditale Quadrato sembra ideale per preparazioni strutturate come la ricetta con crema di broccoletto siciliano, calamari e pomodori semi secchi profumata al limone e carbone d\'olive nere."
         ]
     ]; 
-    $length = count($data) - 1;
+    //Footer Nav
+    $contatti = [
+        "Ragione sociale: La Molisana S.P.A.",
+        "Sede Legale: Contrada Colle delle Api, 100/A",
+        "86100 - Campobasso (CB)",
+        "Pec: lamolisana@pec.it",
+        "Tel: +39 0874 4981",
+        "Fax: +39 0874 629584",
+        "info@lamolisana.it (per segnalazioni degli utenti)",
+        "commerciale@lamolisana.it",
+        "export@lamolisana.it",
+        "numero verde 800818081",
+        "telefono 3801292455"
+    ];
+    $pastificio = [
+        "Grano decorticato a pietra",
+        "Il Molise c'è",
+        "Filiera integrata",
+        "100 anni di pasta",
+        "Sartoria della pasta",
+        "Spaghetto Quadrato",
+        "Le Persone"
+    ];
 
+    $collezioneChef = [
+        "Collezione da Chef",
+        "Grandi Cucine",
+        "Biologiche",
+        "Quadrate"
+    ];
+
+    $infoProdotti = [
+        "Le Classiche",
+        "Le Integrali",
+        "Le Speciali",
+        "Le Biologiche",
+        "Le Gluten-Free",
+        "Le Semole",
+        "Le Extra di Lusso"
+    ];
+    // /Footer Nav
+
+    $length = count($data) - 1;
+    
     if ( $id >= $length ) {
       abort(404);
     }
-    
+
     $pasta = $data[$id];
 
     return view('prodotti', [
         'pasta' => $pasta,
         'length' => $length,
-        'id' => $id
+        'id' => $id,
+        'contatti' => $contatti,
+        'collezione' => $collezioneChef,
+        'pastificio' => $pastificio,
+        'productsInfo' => $infoProdotti
+
     ]);
 })->where('id', '[0-9]+') -> name('prodotti');

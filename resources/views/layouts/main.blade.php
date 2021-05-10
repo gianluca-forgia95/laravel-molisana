@@ -18,7 +18,7 @@
     </head>
 <body>
 {{-- Header Incluso --}}
- @include('parts.header')
+@include('parts.header')
 {{-- /Header Incluso --}}
 @yield('content')
 {{-- Footer Incluso --}}
