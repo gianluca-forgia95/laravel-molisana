@@ -1,0 +1,36 @@
+.container-boxes {
+    @include containerSt;
+     display: flex;
+     flex-wrap: wrap;
+      .box {
+       width: calc((100% / 3) - 40px);
+       margin: 20px;
+         img {
+           display: block;
+           width: 100%;
+           cursor: pointer;
+         }
+         @media screen and (max-width: 750px) {
+           width: calc((100% / 2) - 40px);
+         }
+         @media screen and (max-width: 480px) {
+           width: calc(100%  - 40px);
+         }
+      }
+   }
+   main {
+    padding: 40px 0;
+   }
+   .bg-main {
+    background-image: url('/images/fondo-pag-speciali.jpg');
+    background-size: contain;
+    height: auto;
+     h2 {
+       text-transform: uppercase;
+       font-weight: $semiboldWeight;
+       margin-left: 30px;
+       margin-top: 20px;
+       color: $primary-blue;
+     }
+   }
+   

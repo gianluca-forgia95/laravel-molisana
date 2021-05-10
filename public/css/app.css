@@ -20,64 +20,12 @@ body {
   font-weight: 600;
 }
 
-.container-boxes {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-.container-boxes .box {
-  width: calc((100% / 3) - 40px);
-  margin: 20px;
-}
-.container-boxes .box img {
-  display: block;
-  width: 100%;
-  cursor: pointer;
+.next {
+  right: 0;
 }
 
-main {
-  padding: 40px 0;
-}
-
-.bg-main {
-  background-image: url("/images/fondo-pag-speciali.jpg");
-  background-size: contain;
-  height: auto;
-}
-.bg-main h2 {
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-left: 30px;
-  margin-top: 20px;
-  color: #002d73;
-}
-
-.box-product {
-  display: flex;
-  flex-direction: column;
-  color: #002d73;
-}
-.box-product img {
-  width: 100%;
-  display: block;
-}
-.box-product h1 {
-  margin: auto;
-  text-transform: uppercase;
-}
-
-.bg-light {
-  background-color: #b7dae5;
-}
-
-#products {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#products i {
-  font-size: 40px;
+.prev {
+  left: 0;
 }
 
 .logo img {
@@ -135,4 +83,74 @@ footer {
   background-image: url("/images/footer-montagne-bottom.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+.box-product {
+  display: flex;
+  flex-direction: column;
+  color: #002d73;
+}
+.box-product img {
+  width: 100%;
+  display: block;
+}
+.box-product h1 {
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.bg-light {
+  background-color: #b7dae5;
+}
+
+#products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#products i {
+  font-size: 40px;
+}
+
+.container-boxes {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-boxes .box {
+  width: calc((100% / 3) - 40px);
+  margin: 20px;
+}
+.container-boxes .box img {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+@media screen and (max-width: 750px) {
+  .container-boxes .box {
+    width: calc((100% / 2) - 40px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-boxes .box {
+    width: calc(100% - 40px);
+  }
+}
+
+main {
+  padding: 40px 0;
+}
+
+.bg-main {
+  background-image: url("/images/fondo-pag-speciali.jpg");
+  background-size: contain;
+  height: auto;
+}
+.bg-main h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-top: 20px;
+  color: #002d73;
 }
