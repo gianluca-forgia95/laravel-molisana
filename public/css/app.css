@@ -33,6 +33,7 @@ body {
 .container-boxes .box img {
   display: block;
   width: 100%;
+  cursor: pointer;
 }
 
 main {
@@ -91,6 +92,7 @@ main {
   padding: 16px 0;
   font-weight: 600;
   color: #848d9b;
+  margin-top: 50px;
 }
 
 .list-info {

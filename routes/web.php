@@ -155,10 +155,20 @@ Route::get('/', function () {
       }
 
     }
-    
+    //Invio i Data alla view
     return view('home' , [
         'corte' => $corte,
         'lunghe' => $lunghe,
         'cortissime' => $cortissime,
     ]);
-});
+})->name('homepage');
+
+
+Route::get('/news', function() {
+    return view('news');
+}) ->name('news');
+
+
+Route::get('/prodotti', function() {
+    return view('prodotti');
+}) ->name('prodotti');

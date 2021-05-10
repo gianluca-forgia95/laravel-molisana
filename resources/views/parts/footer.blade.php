@@ -9,7 +9,7 @@
             </div>
         {{-- /Logo --}}
         {{-- List Contacts --}}
-            <ul>
+            <ul >
               <li>Ragione Sociale: La Molisana SPA</li>
               <li>Sede Legale: Contrada Colle delle Api, 100/A - 86100 - Campobasso (CB)</li>
               <li>Pec: lamolisana@pec.it</li>
@@ -28,7 +28,7 @@
         <div class="list-column">
         {{-- Pastificio --}}
             <h3>Pastificio</h3>
-            <ul>
+            <ul class="list-footer" >
               <li>Il Pastificio</li>
               <li>Grano decorticato a pietra</li>
               <li>Il Molise c’è</li>
@@ -67,5 +67,6 @@
      </div>
      {{-- /Column 3--}}
   </div>
+
 
 </footer>
