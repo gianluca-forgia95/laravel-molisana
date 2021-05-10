@@ -430,7 +430,7 @@ Route::get('/prodotti/{id}', function($id) {
 
     $length = count($data) - 1;
 
-    if ( $id >= $length ) {
+    if ( $id > $length ) {
       abort(404);
     }
 
