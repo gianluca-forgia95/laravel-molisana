@@ -13,9 +13,7 @@ Prodotti
   <div class="container" id="products">     
 {{-- Prev Arrow --}}
     <div class="prev">
-        @if ($id > 0) 
-            <a href=" {{ route('prodotti', $id - 1) }}"><i class="fas fa-chevron-left"></i></a>
-        @endif
+        <a href="{{ route('prodotti', $prev)}}"><i class="fas fa-chevron-left"></i></a> 
     </div>
 {{-- /Prev Arrow --}}
 {{-- Product --}}
@@ -27,10 +25,8 @@ Prodotti
     </div> 
 {{-- /Product --}}
 {{-- Next Arrow --}}
-    <div class="next">
-        @if ($id < $length) 
-            <a href=" {{ route('prodotti', $id + 1) }}"><i class="fas fa-chevron-right"></i></a>
-        @endif
+    <div class="next">   
+        <a href="{{ route('prodotti', $next )}}"><i class="fas fa-chevron-right"></i></a>
     </div>
  {{-- /Next Arrow --}}
 
