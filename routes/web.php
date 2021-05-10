@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Route Homepage
 Route::get('/', function () {
     //Dati
     $data = [
@@ -210,12 +211,57 @@ Route::get('/', function () {
     ]);
 })->name('homepage');
 
-
+//Route News
 Route::get('/news', function() {
-    return view('news');
+    $contatti = [
+        "Ragione sociale: La Molisana S.P.A.",
+        "Sede Legale: Contrada Colle delle Api, 100/A",
+        "86100 - Campobasso (CB)",
+        "Pec: lamolisana@pec.it",
+        "Tel: +39 0874 4981",
+        "Fax: +39 0874 629584",
+        "info@lamolisana.it (per segnalazioni degli utenti)",
+        "commerciale@lamolisana.it",
+        "export@lamolisana.it",
+        "numero verde 800818081",
+        "telefono 3801292455"
+    ];
+    $pastificio = [
+        "Grano decorticato a pietra",
+        "Il Molise c'è",
+        "Filiera integrata",
+        "100 anni di pasta",
+        "Sartoria della pasta",
+        "Spaghetto Quadrato",
+        "Le Persone"
+    ];
+
+    $collezioneChef = [
+        "Collezione da Chef",
+        "Grandi Cucine",
+        "Biologiche",
+        "Quadrate"
+    ];
+
+    $infoProdotti = [
+        "Le Classiche",
+        "Le Integrali",
+        "Le Speciali",
+        "Le Biologiche",
+        "Le Gluten-Free",
+        "Le Semole",
+        "Le Extra di Lusso"
+    ];
+
+    return view('news' , [
+        'contatti' => $contatti,
+        'collezione' => $collezioneChef,
+        'pastificio' => $pastificio,
+        'productsInfo' => $infoProdotti
+    ]);
 }) ->name('news');
 
-
+//Route Prodotti
 Route::get('/prodotti/{id}', function($id) {
 
     $data = [
@@ -383,7 +429,7 @@ Route::get('/prodotti/{id}', function($id) {
     // /Footer Nav
 
     $length = count($data) - 1;
-    
+
     if ( $id >= $length ) {
       abort(404);
     }

@@ -10,6 +10,7 @@
            width: 100%;
            cursor: pointer;
          }
+         //Responsive
          @media screen and (max-width: 750px) {
            width: calc((100% / 2) - 40px);
          }
