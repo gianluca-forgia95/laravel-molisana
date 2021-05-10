@@ -53,6 +53,33 @@ main {
   color: #002d73;
 }
 
+.box-product {
+  display: flex;
+  flex-direction: column;
+  color: #002d73;
+}
+.box-product img {
+  width: 100%;
+  display: block;
+}
+.box-product h1 {
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.bg-light {
+  background-color: #b7dae5;
+}
+
+#products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#products i {
+  font-size: 40px;
+}
+
 .logo img {
   max-width: 250px;
   padding: 40px;
