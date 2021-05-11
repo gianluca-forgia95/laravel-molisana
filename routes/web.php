@@ -427,12 +427,10 @@ Route::get('/prodotti/{id}', function($id) {
         "Le Extra di Lusso"
     ];
     // /Footer Nav
+    //Next Prev
     $next = ($id == (count($data) - 1)) ? 0 : $id + 1;
     $prev = ($id == 0) ? (count($data) - 1) : $id - 1;
-    // $length = count($data) - 1;
-
-    // 
-
+   
     $pasta = $data[$id];
 
     return view('prodotti', [
@@ -440,7 +438,6 @@ Route::get('/prodotti/{id}', function($id) {
         // 'length' => $length,
         'next' => $next,
         'prev' => $prev,
-        'id' => $id,
         'contatti' => $contatti,
         'collezione' => $collezioneChef,
         'pastificio' => $pastificio,

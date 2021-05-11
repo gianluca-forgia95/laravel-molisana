@@ -22,8 +22,9 @@
 {{-- /Header Incluso --}}
 @yield('content')
 {{-- Footer Incluso --}}
-@include('parts/footer')
+@include('parts.footer')
 {{-- /Footer Incluso --}}
+@yield('js')
 </body>
 </html>
 
